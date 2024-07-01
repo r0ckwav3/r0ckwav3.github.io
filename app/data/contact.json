@@ -1,0 +1,16 @@
+{
+  "methods": [
+    {
+      "name": "Mobile Phone",
+      "address": "315-261-2688"
+    },
+    {
+      "name": "Email",
+      "address": "petercvandervelde@gmail.com"
+    },
+    {
+      "name": "City",
+      "address": "El Cerrito, CA, USA"
+    }
+  ]
+}
