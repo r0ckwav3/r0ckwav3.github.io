@@ -16,7 +16,7 @@ function HomeBanner() {
   const contact_text = contactjson.methods.map((e) => e.address).join(" | ");
 
   return (
-    <div className="flex flex-row m-8 p-8 bg-slate-700">
+    <div className="flex flex-row my-8 mx-32 p-8 bg-slate-700">
       <div className="w-48 h-72 relative flex-none mr-8">
         <Image
           style={{ objectFit: "cover" }}
@@ -25,9 +25,11 @@ function HomeBanner() {
           fill
         />
       </div>
-      <div className="flex flex-col place-content-between text-lg text-white font-light">
-        <div> {aboutjson.short_about} </div>
-        <div className="text-center"> {contact_text} </div>
+      <div className="relative text-xl text-white font-light">
+        {aboutjson.short_about.map((e, i) => (
+          <div key={i}> {e} </div >)
+        )}
+        <div className="text-center absolute bottom-0 inset-x-0"> {contact_text} </div>
       </div>
     </div>
   );
