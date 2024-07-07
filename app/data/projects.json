@@ -3,13 +3,26 @@
     {
       "title": "python-docget",
       "image": {
-        "src": "/headshot.png",
+        "src": "/placeholder.png",
         "alt": "placeholder image"
       },
-      "short_desc": "Quisque eu consectetur turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam consectetur at leo in pretium. Morbi hendrerit dictum ex, a mattis lectus aliquet nec. Maecenas dictum urna id orci egestas pretium. Sed finibus nec erat vitae laoreet. Duis ut mauris dolor.",
-      "long_desc": "Quisque eu consectetur turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam consectetur at leo in pretium. Morbi hendrerit dictum ex, a mattis lectus aliquet nec. Maecenas dictum urna id orci egestas pretium. Sed finibus nec erat vitae laoreet. Duis ut mauris dolor.",
+      "short_desc": "A package for the now sunset IDE Atom which adds a side panel to search python documentation. I used the Atom API enpoints to fetch the user's selected word and then used the JavaScript https library to manually scrape the python documentation and transform it into a user readable format.",
+      "long_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis aliquet convallis. Nulla pharetra eu nibh in rutrum. Aenean scelerisque erat ut magna mollis ornare. Quisque posuere sodales massa. Vivamus sed rutrum diam. Aenean vulputate euismod ligula, ac efficitur est aliquet a. Nunc tortor est, scelerisque nec fringilla sit amet, pulvinar eu mauris. Praesent eget luctus nibh. Proin non scelerisque nisi. Aenean blandit mattis ante. Nullam commodo iaculis dolor, nec egestas odio varius sed. Nullam venenatis sapien mauris, non sollicitudin orci scelerisque nec. Nullam vel dui tortor. Quisque volutpat, orci vitae pretium consequat, magna sapien sodales arcu, viverra congue lorem mi quis urna.",
       "links": [
         {"name": "github", "url": "https://github.com/r0ckwav3/python-docget"}
+      ]
+    },
+    {
+      "title": "Melds of Majesty",
+      "image": {
+        "src": "/placeholder.png",
+        "alt": "placeholder image"
+      },
+      "short_desc": "An idle game based loosely on the card game gin rummy. Created as part of a UCSB Game Dev Club quarterly project. I used react to create the frontend and then coded the game logic in bare JavaScript.",
+      "long_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis aliquet convallis. Nulla pharetra eu nibh in rutrum. Aenean scelerisque erat ut magna mollis ornare. Quisque posuere sodales massa. Vivamus sed rutrum diam. Aenean vulputate euismod ligula, ac efficitur est aliquet a. Nunc tortor est, scelerisque nec fringilla sit amet, pulvinar eu mauris. Praesent eget luctus nibh. Proin non scelerisque nisi. Aenean blandit mattis ante. Nullam commodo iaculis dolor, nec egestas odio varius sed. Nullam venenatis sapien mauris, non sollicitudin orci scelerisque nec. Nullam vel dui tortor. Quisque volutpat, orci vitae pretium consequat, magna sapien sodales arcu, viverra congue lorem mi quis urna.",
+      "links": [
+        {"name": "github", "url": "https://github.com/r0ckwav3/idle-rummy"},
+        {"name": "play now", "url": "https://r0ckwav3.github.io/idle-rummy/"}
       ]
     }
   ]

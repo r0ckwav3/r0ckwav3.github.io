@@ -42,11 +42,16 @@ type Project = {
 };
 
 function ProjectSummaries() {
+  let objs: Array<React.ReactNode> = [];
+  projectsjson.projects.forEach((proj, i) => {
+    if(i!=0){
+      objs.push(<ProjectSummaryDivider />)
+    }
+    objs.push(<ProjectSummary project={proj} key={proj.title} />)
+  })
   return (
     <div className="flex flex-col items-center">
-      {projectsjson.projects.map((proj, i) => (
-        <ProjectSummary project={proj} key={proj.title} />
-      ))}
+      {objs}
     </div>
   );
 }
@@ -62,13 +67,20 @@ function ProjectSummary({ project }: Readonly<{ project: Project }>) {
           fill
         />
       </div>
-      <div className="m-8">
+      <div className="ml-8">
         <div className="text-black text-2xl font-bold">
-          <a href={project.links[0].url}>{project.title}</a>
+          <a target="_blank" rel="noopener noreferrer" href={project.links[0].url}>{project.title}</a>
         </div>
         <br />
         <div className="text-lg">{project.short_desc}</div>
       </div>
     </div>
   );
+}
+
+function ProjectSummaryDivider(){
+  return (
+    <div className = "h-1 w-3/4 bg-zinc-500">
+    </div >
+  )
 }
