@@ -13,7 +13,7 @@ export default function Home() {
 }
 
 function HomeBanner() {
-  const contact_text = contactjson.methods.map((e) => e.address).join(" | ");
+  const contact_text = contactjson.methods.filter(e => e.shortlist).map((e) => e.address).join(" | ");
 
   return (
     <div className="flex flex-row my-8 mx-32 p-8 bg-slate-700">

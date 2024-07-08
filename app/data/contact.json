@@ -2,15 +2,33 @@
   "methods": [
     {
       "name": "Mobile Phone",
-      "address": "315-261-2688"
+      "address": "315-261-2688",
+      "shortlist": true,
+      "link": false
     },
     {
       "name": "Email",
-      "address": "petercvandervelde@gmail.com"
+      "address": "petercvandervelde@gmail.com",
+      "shortlist": true,
+      "link": false
     },
     {
       "name": "City",
-      "address": "El Cerrito, CA, USA"
+      "address": "El Cerrito, CA, USA",
+      "shortlist": true,
+      "link": false
+    },
+    {
+      "name": "Linkedin",
+      "address": "https://www.linkedin.com/in/peter-vandervelde-76012024b/",
+      "shortlist": false,
+      "link": true
+    },
+    {
+      "name": "Github",
+      "address": "https://github.com/r0ckwav3",
+      "shortlist": false,
+      "link": true
     }
   ]
 }
