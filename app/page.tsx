@@ -5,7 +5,7 @@ import projectsjson from "@/app/data/projects.json";
 
 export default function Home() {
   return (
-    <div className="fixed flex flex-row w-screen h-screen bg-amber-100">
+    <div className="fixed flex flex-row w-screen h-screen">
       <Sidebar />
       <Content />
     </div>
@@ -21,7 +21,7 @@ function Sidebar() {
   ]
 
   return (
-    <div className = "flex flex-col justify-start items-center m-8 rounded-2xl max-h-screen bg-emerald-900">
+    <div className = "flex flex-col justify-start items-center m-8 rounded-2xl max-h-screen bg-indigo-900">
       <div className="relative w-32 h-48 m-8">
         <Image
           className="rounded-lg"
@@ -37,7 +37,7 @@ function Sidebar() {
 }
 
 function SidebarButton({ title, jumpto, selected }: Readonly<{ title: string, jumpto: string, selected: boolean }>){
-  let colorclass = selected ? "text-lime-500" : "text-lime-700 hover:text-lime-600";
+  let colorclass = selected ? "text-violet-400" : "text-white hover:text-violet-500";
   let classes = "text-xl my-2 font-bold transition duration-200 " + colorclass;
   return (
     <div className={classes}>
@@ -94,7 +94,7 @@ function SectionProjects() {
 
 function ContentSpacer() {
   return (
-    <div className = "mx-auto my-32 w-1/2 h-0.5 bg-stone-500">
+    <div className = "mx-auto my-32 w-1/2 h-0.5 bg-zinc-500">
     </div >
   )
 }
