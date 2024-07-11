@@ -15,7 +15,7 @@ export default function ResumeEntry({ item }: Readonly<{item: Experience}>){
     <div className="w-full my-8">
       <ResumeEntryHeader item={item} />
       <div className = "flex flex-row">
-        <div className = "w-8 relative">
+        <div className = "w-8 shrink-0 relative">
           <div className = "w-0.5 absolute inset-y-2 bg-indigo-500" />
         </div>
         <div className = "grow">
