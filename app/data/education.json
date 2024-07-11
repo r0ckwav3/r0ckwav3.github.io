@@ -5,9 +5,9 @@
       "title": "Bachelor of Science (B.S.), Computer Science",
       "date": "Expected June 2025",
       "image": {
-              "src": "/UC-Santa-Barbara-seal-2 Color RGB.png",
-              "alt": "UCSB seal"
-            },
+        "src": "/UC-Santa-Barbara-seal-2 Color RGB.png",
+        "alt": "UCSB seal"
+      },
       "desc": ["Major GPA: 3.98/4.00"],
       "coursework": ["Data Structures & Algorithms", "Computer Architecture", "Parallel Scientific Computing", "Automata and Formal Languages", "Probability and Statistics", "Computer Aided Reasoning for Software"]
     }

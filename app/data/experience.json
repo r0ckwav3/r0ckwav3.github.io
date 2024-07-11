@@ -5,9 +5,9 @@
       "title": "Software Engineering Intern - Full Stack Development",
       "date": "June 2023 - August 2023",
       "image": {
-              "src": "/placeholder.png",
-              "alt": "placeholder image"
-            },
+        "src": "/placeholder.png",
+        "alt": "placeholder image"
+      },
       "desc": [
         "Created a Ruby on Rails service to ingest nearly 100 MB of data into an Azure database daily.",
         "Developed a GRPC endpoint in Go to assist in validating billions of dollars of monthly transactions.",
@@ -20,9 +20,9 @@
       "title": "Undergraduate Learning Assistant - CMPSC 32, CMPSC 24",
       "date": "October 2023 - June 2024",
       "image": {
-              "src": "/placeholder.png",
-              "alt": "placeholder image"
-            },
+        "src": "/UC-Santa-Barbara-seal-2 Color RGB.png",
+        "alt": "UCSB seal"
+      },
       "desc": [
         "Ran weekly office hours, and assisted TAs in running weekly labs.",
         "Advised students on programming projects and understanding class concepts."
@@ -33,9 +33,9 @@
       "title": "Officer, Programming Specialist, Assistant Social Media Manager",
       "date": "October 2023 - Present",
       "image": {
-              "src": "/placeholder.png",
-              "alt": "placeholder image"
-            },
+        "src": "/placeholder.png",
+        "alt": "placeholder image"
+      },
       "desc": [
         "Organized club events and allocated school-provided funds in weekly officer meetings.",
         "Advised club members on game development practices in quarterly projects.",
