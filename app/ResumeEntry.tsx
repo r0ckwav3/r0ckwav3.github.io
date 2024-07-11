@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 type Experience = {
-  organization?: string;
+  organization: string;
   title: string;
   image: { src: string; alt: string };
   date?: string;
@@ -35,25 +35,30 @@ export default function ResumeEntry({ item }: Readonly<{item: Experience}>){
 }
 
 function ResumeEntryHeader({ item }: Readonly<{ item: Experience }>) {
-  if (item.organization === undefined) {
-    return (
-      <div className="flex flex-row text-lg">
-        <span className = "grow"> { item.title } </span>
-        <span className = "italic"> { item.date } </span>
-      </div>
-    )
-  } else {
-    return (
-      <>
+  const im = (
+    <div className="relative w-12 h-12 mr-4">
+      <Image
+        className="rounded-lg"
+        style={{ objectFit: "cover" }}
+        src={item.image.src}
+        alt={item.image.alt}
+        fill
+      />
+    </div>
+  );
+
+  return (
+    <div className = "flex flex-row items-center">
+      {im}
+      <div className="grow">
         <div className="flex flex-row text-lg">
-          <span className = "grow"> { item.organization } </span>
-          <span className = "italic"> { item.date } </span>
+          <span className="grow"> {item.organization} </span>
+          <span className="italic"> {item.date} </span>
         </div>
         <div>
-          <span className = "text-lg font-bold"> { item.title } </span>
+          <span className="text-lg font-bold"> {item.title} </span>
         </div>
-      </>
-    )
-  }
-
+      </div>
+    </div>
+  )
 }
