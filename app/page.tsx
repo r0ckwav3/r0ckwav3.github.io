@@ -1,7 +1,14 @@
 import Image from "next/image";
+import { Playfair_Display } from "next/font/google";
+import ResumeEntry from "@/app/ResumeEntry";
+
 import aboutjson from "@/app/data/about.json";
 import contactjson from "@/app/data/contact.json";
 import projectsjson from "@/app/data/projects.json";
+import educationjson from "@/app/data/education.json";
+import experiencejson from "@/app/data/experience.json"
+
+const pf_display = Playfair_Display({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -48,12 +55,12 @@ function SidebarButton({ title, jumpto, selected }: Readonly<{ title: string, ju
 
 function Content() {
   return (
-    <div className = "grow overflow-scroll">
+    <div className = "grow overflow-scroll px-16 py-32">
       <SectionAbout />
       <ContentSpacer />
-      <SectionExperience />
-      <ContentSpacer />
       <SectionEducation />
+      <ContentSpacer />
+      <SectionExperience />
       <ContentSpacer />
       <SectionProjects />
     </div>
@@ -68,18 +75,24 @@ function SectionAbout() {
   )
 }
 
-function SectionExperience() {
+function SectionEducation() {
   return (
-    <div id="section-experience">
-      Experience
+    <div id="section-education">
+      <SectionHeader title="Education" />
+      {educationjson.contents.map((item,i) =>
+        <ResumeEntry key={i} item={item} />
+      )}
     </div>
   )
 }
 
-function SectionEducation() {
+function SectionExperience() {
   return (
-    <div id="section-Eeucation">
-      Education
+    <div id="section-experience">
+      <SectionHeader title="Experience" />
+      {experiencejson.contents.map((item,i) =>
+        <ResumeEntry key={i} item={item} />
+      )}
     </div>
   )
 }
@@ -87,14 +100,23 @@ function SectionEducation() {
 function SectionProjects() {
   return (
     <div id="section-projects">
-      Projects
+      <SectionHeader title="Projects" />
     </div>
+  )
+}
+
+function SectionHeader({ title }: Readonly<{title:string}>){
+  const classname = pf_display.className + " text-4xl"
+  return (
+    <div className = {classname}>
+      {title}
+    </div >
   )
 }
 
 function ContentSpacer() {
   return (
-    <div className = "mx-auto my-32 w-1/2 h-0.5 bg-zinc-500">
+    <div className = "mx-auto my-16 w-1/2 h-0.5 bg-black">
     </div >
   )
 }

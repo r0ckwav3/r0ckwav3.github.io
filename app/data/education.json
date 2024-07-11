@@ -1,0 +1,15 @@
+{
+  "contents": [
+    {
+      "organization": "University of California, Santa Barbara",
+      "title": "Bachelor of Science (B.S.), Computer Science",
+      "date": "Expected June 2025",
+      "image": {
+              "src": "/placeholder.png",
+              "alt": "placeholder image"
+            },
+      "desc": ["Major GPA: 3.98/4.00"],
+      "coursework": ["Data Structures & Algorithms", "Computer Architecture", "Parallel Scientific Computing", "Automata and Formal Languages", "Probability and Statistics", "Computer Aided Reasoning for Software"]
+    }
+  ]
+}
