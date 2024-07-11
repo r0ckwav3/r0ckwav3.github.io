@@ -101,6 +101,9 @@ function SectionProjects() {
   return (
     <div id="section-projects">
       <SectionHeader title="Projects" />
+      {projectsjson.contents.map((item,i) =>
+        <ResumeEntry key={i} item={item} />
+      )}
     </div>
   )
 }

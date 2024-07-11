@@ -7,7 +7,7 @@ type Experience = {
   date?: string;
   desc: string[];
   coursework?: string[];
-  links?: Array<{ name: string; url: string }>;
+  link?: { name: string; url: string };
 };
 
 export default function ResumeEntry({ item }: Readonly<{item: Experience}>){
@@ -38,7 +38,7 @@ function ResumeEntryHeader({ item }: Readonly<{ item: Experience }>) {
   if (item.organization === undefined) {
     return (
       <div className="flex flex-row text-lg">
-        <span className = "font-bold grow"> { item.title } </span>
+        <span className = "grow"> { item.title } </span>
         <span className = "italic"> { item.date } </span>
       </div>
     )
