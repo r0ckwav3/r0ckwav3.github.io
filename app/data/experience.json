@@ -6,7 +6,7 @@
       "date": "June 2023 - August 2023",
       "image": {
         "src": "/brg_logo_color.svg",
-        "alt": "placeholder image"
+        "alt": "Berkeley Research Group logo"
       },
       "desc": [
         "Created a Ruby on Rails service to ingest nearly 100 MB of data into an Azure database daily.",
@@ -34,13 +34,14 @@
       "date": "October 2023 - Present",
       "image": {
         "src": "/UCSBGDC Logo.png",
-        "alt": "placeholder image"
+        "alt": "UCSB GDC logo"
       },
       "desc": [
         "Organized club events and allocated school-provided funds in weekly officer meetings.",
         "Advised club members on game development practices in quarterly projects.",
         "Jointly managed the club Instagram account, creating announcements and promotional materials."
-      ]
+      ],
+      "link": {"name": "club website", "url": "https://ucsbgamedev.github.io/"}
     }
   ]
 }
