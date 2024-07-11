@@ -39,7 +39,7 @@ function ResumeEntryHeader({ item }: Readonly<{ item: Experience }>) {
     <div className="relative w-12 h-12 mr-4">
       <Image
         className="rounded-lg"
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "contain"}}
         src={item.image.src}
         alt={item.image.alt}
         fill
