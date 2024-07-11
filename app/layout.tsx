@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import NavBar from '@/app/NavBar';
+import { Inter, Playfair_Display } from "next/font/google";
+// import NavBar from '@/app/NavBar';
+import { SansContext, SerifContext } from "@/app/fontcontext";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const pf_display = Playfair_Display({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +16,11 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <SansContext.Provider value={inter}>
+          <SerifContext.Provider value={pf_display}>
+            {children}
+          </SerifContext.Provider >
+        </SansContext.Provider >
       </body >
     </html>
   );
