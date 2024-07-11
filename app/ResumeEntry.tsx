@@ -47,8 +47,8 @@ function ResumeEntryHeader({ item }: Readonly<{ item: Experience }>) {
     </div>
   );
 
-  return (
-    <div className = "flex flex-row items-center">
+  const content = (
+    <>
       {im}
       <div className="grow">
         <div className="flex flex-row text-lg">
@@ -59,6 +59,12 @@ function ResumeEntryHeader({ item }: Readonly<{ item: Experience }>) {
           <span className="text-lg font-bold"> {item.title} </span>
         </div>
       </div>
-    </div>
-  )
+    </>
+  );
+
+  if (item.link === undefined) {
+    return (<div className="flex flex-row items-center"> {content} </div>);
+  } else {
+    return (<a target="_blank" rel="noopener noreferrer" href={item.link.url}  className="flex flex-row items-center hover:underline"> {content} </a>);
+  }
 }
