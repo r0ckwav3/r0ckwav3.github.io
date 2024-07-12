@@ -1,34 +1,28 @@
 {
-  "methods": [
+  "text": [
     {
       "name": "Mobile Phone",
-      "address": "315-261-2688",
-      "shortlist": true,
-      "link": false
+      "address": "315-261-2688"
     },
     {
       "name": "Email",
-      "address": "petercvandervelde@gmail.com",
-      "shortlist": true,
-      "link": false
+      "address": "petercvandervelde@gmail.com"
     },
     {
       "name": "City",
-      "address": "El Cerrito, CA, USA",
-      "shortlist": true,
-      "link": false
-    },
+      "address": "El Cerrito, CA, USA"
+    }
+  ],
+  "links": [
     {
       "name": "Linkedin",
-      "address": "https://www.linkedin.com/in/peter-vandervelde-76012024b/",
-      "shortlist": false,
-      "link": true
+      "url": "https://www.linkedin.com/in/peter-vandervelde-76012024b/",
+      "image": { "src": "/placeholder.png", "alt": "github icon" }
     },
     {
       "name": "Github",
-      "address": "https://github.com/r0ckwav3",
-      "shortlist": false,
-      "link": true
+      "url": "https://github.com/r0ckwav3",
+      "image": { "src": "/github-mark.svg", "alt": "github icon" }
     }
   ]
 }
