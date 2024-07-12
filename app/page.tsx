@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { Playfair_Display } from "next/font/google";
 import ResumeEntry from "@/app/ResumeEntry";
+import Sidebar from "@/app/Sidebar";
 
 import aboutjson from "@/app/data/about.json";
 import contactjson from "@/app/data/contact.json";
@@ -19,43 +19,9 @@ export default function Home() {
   );
 }
 
-function Sidebar() {
-  let Buttons = [
-    ["About", "section-about"],
-    ["Experience", "section-experience"],
-    ["Education", "section-educatoin"],
-    ["Projects", "section-projects"],
-  ]
-
-  return (
-    <div className = "flex flex-col justify-start items-center m-8 rounded-2xl max-h-screen bg-indigo-900">
-      <div className="relative w-32 h-48 m-8">
-        <Image
-          className="rounded-lg"
-          style={{ objectFit: "cover" }}
-          src={aboutjson.image.src}
-          alt={aboutjson.image.alt}
-          fill
-        />
-      </div>
-          {Buttons.map(b => <SidebarButton key={b[0]} title={b[0]} jumpto={b[1]} selected={false} />)}
-    </div>
-  )
-}
-
-function SidebarButton({ title, jumpto, selected }: Readonly<{ title: string, jumpto: string, selected: boolean }>){
-  let colorclass = selected ? "text-violet-400" : "text-white hover:text-violet-500";
-  let classes = "text-xl my-2 font-bold transition duration-200 " + colorclass;
-  return (
-    <div className={classes}>
-      {title}
-    </div >
-  )
-}
-
 function Content() {
   return (
-    <div className = "grow overflow-scroll px-16 py-32">
+    <div className = "grow overflow-scroll px-16 py-16">
       <SectionAbout />
       <ContentSpacer />
       <SectionEducation />
@@ -70,7 +36,14 @@ function Content() {
 function SectionAbout() {
   return (
     <div id="section-about">
-      About
+      <div className="text-4xl font-black my-4">
+        {"Hi, I'm"}
+        <span className="text-6xl text-indigo-800"> Peter Vandervelde </span>
+        !
+      </div>
+      <div className="text-lg">
+        {aboutjson.about.map((item, i) => (<div className="my-2" key={i}> {item} </div>))}
+      </div>
     </div>
   )
 }
