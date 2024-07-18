@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 
 import aboutjson from "@/app/data/about.json";
@@ -5,7 +7,8 @@ import contactjson from "@/app/data/contact.json";
 
 export default function SectionAbout() {
   return (
-    <div id="section-about">
+    <div id="section-about" className="min-h-screen flex flex-col">
+      <div className = "h-16" />
       <div className = "text-4xl font-black my-4">
         {"Hi, I'm"}
         <span className="text-6xl text-indigo-800"> Peter Vandervelde </span>
@@ -18,6 +21,9 @@ export default function SectionAbout() {
         {aboutjson.about.map((item, i) => (<div className="my-2" key={i}> {item} </div>))}
       </div>
       <ContactIcons/>
+      <div className="grow min-h-32 flex flex-col justify-center items-center">
+        <ScrollButton jumpto="section-education" />
+      </div>
     </div>
   )
 }
@@ -51,5 +57,17 @@ function ContactIcon({ link }: Readonly<{link: ContactLink}>){
         />
       </div>
     </a>
+  )
+}
+
+
+function ScrollButton({ jumpto }: Readonly<{ jumpto: string }>) {
+  function onclick(){
+    document.getElementById(jumpto)?.scrollIntoView({behavior:"smooth"});
+  }
+  return (
+    <button className="bg-indigo-800 hover:bg-indigo-700" onClick={onclick}>
+      Scroll me! (insert triangle here that changes hover color like sidebar)
+    </button >
   )
 }

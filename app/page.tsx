@@ -20,7 +20,7 @@ export default function Home() {
 
 function Content() {
   return (
-    <div className = "grow overflow-scroll px-16 py-16">
+    <div className = "grow overflow-scroll px-16">
       <SectionAbout />
       <ContentSpacer />
       <SectionEducation />
