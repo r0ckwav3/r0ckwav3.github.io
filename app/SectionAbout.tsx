@@ -66,8 +66,8 @@ function ScrollButton({ jumpto }: Readonly<{ jumpto: string }>) {
     document.getElementById(jumpto)?.scrollIntoView({behavior:"smooth"});
   }
   return (
-    <button className="bg-indigo-800 hover:bg-indigo-700" onClick={onclick}>
-      Scroll me! (insert triangle here that changes hover color like sidebar)
+    <button className="bg-indigo-800 hover:bg-indigo-700 p-4 rounded-full text-white text-lg font-bold" onClick={onclick}>
+      Continue
     </button >
   )
 }
