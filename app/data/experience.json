@@ -1,6 +1,21 @@
 {
   "contents": [
     {
+      "organization": "Carnagie Mellon University, Software and Societal Systems Department (PASTA lab)",
+      "title": "Undergraduate Researcher - REUSE program",
+      "date": "June 2024 - August 2024",
+      "image": {
+        "src": "/cmu-wordmark-square-w-on-r.svg",
+        "alt": "CMU Logo"
+      },
+      "desc": [
+        "Advised by Rohan Padhye.",
+        "In this program, I performed an empirical study on date and time related bugs in open source python libraries. Along with two other undergraduate researchers, I categorized 500 bugs according to metrics such as affected computation, severity and fix logic. We then validated rater agreement with a Cohen kappa coefficient on a test set of 60 bugs.",
+        "We used this data to compile a benchmark suite of common kinds of date/time bugs and aim to create a static analysis tool to identify these bugs in other github repositories."
+      ],
+      "link": {"name": "PASTA lab website", "url": "https://cmu-pasta.github.io/"}
+    },
+    {
       "organization": "Berkeley Research Group",
       "title": "Software Engineering Intern - Full Stack Development",
       "date": "June 2023 - August 2023",
