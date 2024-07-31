@@ -21,9 +21,6 @@ export default function SectionAbout() {
         {aboutjson.about.map((item, i) => (<div className="my-2" key={i}> {item} </div>))}
       </div>
       <ContactIcons/>
-      <div className="grow min-h-32 flex flex-col justify-center items-center">
-        <ScrollButton jumpto="section-education" />
-      </div>
     </div>
   )
 }
@@ -57,17 +54,5 @@ function ContactIcon({ link }: Readonly<{link: ContactLink}>){
         />
       </div>
     </a>
-  )
-}
-
-
-function ScrollButton({ jumpto }: Readonly<{ jumpto: string }>) {
-  function onclick(){
-    document.getElementById(jumpto)?.scrollIntoView({behavior:"smooth"});
-  }
-  return (
-    <button className="bg-indigo-800 hover:bg-indigo-700 p-4 rounded-full text-white text-lg font-bold" onClick={onclick}>
-      Continue
-    </button >
   )
 }
