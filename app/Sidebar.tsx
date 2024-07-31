@@ -10,6 +10,7 @@ export default function Sidebar() {
     ["Education", "section-education"],
     ["Experience", "section-experience"],
     ["Projects", "section-projects"],
+    ["Skills", "section-skills"],
   ]
 
   return (

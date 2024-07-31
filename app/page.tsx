@@ -6,6 +6,7 @@ import SectionAbout from "@/app/SectionAbout"
 import projectsjson from "@/app/data/projects.json";
 import educationjson from "@/app/data/education.json";
 import experiencejson from "@/app/data/experience.json"
+import skillsjson from "@/app/data/skills.json";
 
 const pf_display = Playfair_Display({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function Home() {
 
 function Content() {
   return (
-    <div className = "grow overflow-scroll px-16">
+    <div className = "grow overflow-scroll px-16 pb-16">
       <SectionAbout />
       <ContentSpacer />
       <SectionEducation />
@@ -28,6 +29,8 @@ function Content() {
       <SectionExperience />
       <ContentSpacer />
       <SectionProjects />
+      <ContentSpacer />
+      <SectionSkills />
     </div>
   )
 }
@@ -62,6 +65,22 @@ function SectionProjects() {
       {projectsjson.contents.map((item,i) =>
         <ResumeEntry key={i} item={item} />
       )}
+    </div>
+  )
+}
+
+function SectionSkills() {
+  return (
+    <div id="section-skills">
+      <SectionHeader title="Skills" />
+      {skillsjson.categories.map((item, i) =>{
+        return (
+          <div className="my-4" key={i}>
+            <span className="font-bold">{item.title + ": "}</span>
+            <span>{item.skills.join(", ")}</span>
+          </div>
+        )
+      })}
     </div>
   )
 }

@@ -1,0 +1,16 @@
+{
+  "categories": [
+    {
+      "title": "Languages",
+      "skills": ["Python", "Javascript", "Rust", "C++", "Ruby", "SQL", "Postgres", "Go", "C#", "HTML", "CSS"]
+    },
+    {
+      "title": "Packages / Frameworks",
+      "skills": ["Numpy", "Scipy", "Matplotlib", "Pandas", "Tensorflow", "Jupyter", "Node.js", "React.js", "Tailwind"]
+    },
+    {
+      "title": "Tools",
+      "skills": ["Git", "Github", "Agile", "Jira", "Google Sheets", "Kubernetes", "Microsoft Azure", "GRPC"]
+    }
+  ]
+}
